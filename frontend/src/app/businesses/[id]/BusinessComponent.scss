@@ -1,0 +1,56 @@
+.business-page-content {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 2rem;
+
+  .business-details-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+
+    .business-actions {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+  }
+
+  .staff-list {
+    flex: 1;
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border-spacing: 0;
+      margin-top: 20px;
+
+      th {
+        background-color: #f5f5f5;
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+
+        .actions {
+          display: flex;
+          flex-direction: row;
+          gap: 1rem;
+        }
+      }
+
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      tr:hover {
+        background-color: #f5f5f5;
+      }
+    }
+  }
+}
